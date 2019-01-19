@@ -66,8 +66,9 @@ if __name__ == '__main__':
     print("\n========")
     print("Parameter: ")
     for i, b in enumerate(params):
-        print("Beta{} = {}".format(i,b))
-    #print(results.summary())
+        ii, iii= e[i]
+        print("Beta{} (x{}y{}) = {}".format(i,ii,iii,b))
+    print(results.summary())
 
     def F(x):
         X = [(x[0]**e[i][0])*(x[1]**e[i][1]) for i in range(p)]
